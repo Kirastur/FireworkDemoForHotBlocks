@@ -1,0 +1,11 @@
+name: FireworkDemoForHotBlocks
+version: 2.0
+description: Start a firework when a player triggers a HotBlock
+author: Kirastur
+website: https://github.com/Kirastur/FireworkDemoForHotBlocks
+
+
+api-version: 1.17
+load: POSTWORLD
+main: de.polarwolf.hotfireworkdemo.Main
+depend: [HotBlocks]
