@@ -1,6 +1,7 @@
 package de.polarwolf.hotfireworkdemo;
 
 import org.bukkit.Location;
+import org.bukkit.block.data.BlockData;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Firework;
 
@@ -16,8 +17,8 @@ public class DemoModification extends Modification {
 	}
 
 	@Override
-	protected void performDefaultBlockModification() {
-		super.performDefaultBlockModification();
+	protected void performDefaultBlockModification(BlockData blockData) {
+		super.performDefaultBlockModification(blockData);
 		Location fireworkLocation = getLocation();
 		Firework firework = (Firework) getWorld().spawnEntity(fireworkLocation, EntityType.FIREWORK);
 		firework.detonate();
