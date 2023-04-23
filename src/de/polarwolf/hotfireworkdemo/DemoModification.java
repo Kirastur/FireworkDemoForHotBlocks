@@ -20,6 +20,7 @@ public class DemoModification extends Modification {
 	protected void performDefaultBlockModification(BlockData blockData) {
 		super.performDefaultBlockModification(blockData);
 		Location fireworkLocation = getLocation();
+		fireworkLocation.add(0.5, 0.5, 0.5);
 		Firework firework = (Firework) getWorld().spawnEntity(fireworkLocation, EntityType.FIREWORK);
 		firework.detonate();
 	}

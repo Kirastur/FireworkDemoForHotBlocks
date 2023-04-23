@@ -21,7 +21,8 @@ public class DemoListener implements Listener {
 	@EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
 	public void onHotBlocksTriggerEvent(HotBlocksTriggerBlockEvent event) {
 
-		// Use firework only for the "ConcreteRed" rule.
+		// Use fireworks only for the "ConcreteRed" rule.
+		// The "ConcreteRed" rule is part of the HotBlock's out-of-the-box config.yml
 		if (!event.getRule().getName().equals("ConcreteRed")) {
 			return;
 		}
